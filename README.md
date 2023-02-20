@@ -1,5 +1,7 @@
-# Passing Data to In React
+# Passing Data to In React And Forms
 -  This project helps to understand how to manage data in the parent by a child component.
+
+## Passing Data
 
 **NB:**
 1. inline styles with dynamic styling
@@ -27,7 +29,7 @@
     <div style={styles} className='box' onClick={props.toggle} ></div>
     ```
 
- 
+ ## Forms
 
 
 
