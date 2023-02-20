@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import data from './data'
 import Box from './components/Box'
+import Form from './components/Form'
 
 function App() {
   const [squares, setSquares] = useState(data)
@@ -23,6 +24,7 @@ function App() {
     <main>
       {squareElements}
       <hr />
+      <Form />
     </main>
   )
 }
