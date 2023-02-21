@@ -58,8 +58,8 @@
         ```
     - In React instead of gathering everything at the end, we create state and on every change we update state and when time to submit comes we just submit the state we have been gathering. Read react documentation on forms.
 
-1. Controlled inputs - when we're talking about maintaing state in a component there is a concept called the single source of truth. The idea is that the state we are maintaing in a component should be the single source of truth. With a form in react, in the markup, inside our inputs, each input is holding its own state so we end up with two states one being held in the react state and another by the form markup. A good practice is to  make the react state be what drives the state that is visible inside our input box and not the other way round, everytime we type the value of the input box will be controlled by react instead of the input. To fix this we add a value field inside our input that is linked to the react state. Read react documentation on controlled components. 
-    ```jsx
+1. Controlled inputs - when we're talking about maintaing state in a component there is a concept called the *single source of truth*. The idea is that the state we are maintaing in a component should be the single source of truth. With forms in react, in the markup inside our inputs each input is holding its own state so we end up with two states; one being held in the react state and another by the form markup. A good practice is to  make the react state be what drives the state that is visible inside our input box and not the other way round, everytime we type the value of the input box will be controlled by react instead of the input. To fix this we add a value field inside our input that is linked to the react state. Read react documentation on controlled components. 
+    ```js
     <input
          type="text" 
          placeholder='First Name' 
@@ -68,18 +68,18 @@
          value={formData.firstName}
     />    
     ```
-Note that radio buttons can't be controlled the same way so we have to pass a checked property to it.
-    Here the input has its own html state
-    ```js
-    <input type="radio" id="unemployed"  name="employment" value="unemployed" onChange={handleChange}  />
-    ```
+    Note that radio buttons can't be controlled the same way so we have to pass a checked property to it.
+        Here the input has its own html state\
+        ```js
+        <input type="radio" id="unemployed"  name="employment" value="unemployed" onChange={handleChange}  />
+        ```
 
-    Here react manages state/
+        Here react manages state/
 
-    ```js
-    <input type="radio" id="unemployed"  name="employment" value="unemployed" checked={formData.employment === "unemployed"}  onChange={handleChange}  />
-    ```
-    
+        ```js
+        <input type="radio" id="unemployed"  name="employment" value="unemployed" checked={formData.employment === "unemployed"}  onChange={handleChange}  />
+        ```
+
 
 1. When we have a label that is tied to an input you can nest the input inside the children of the label or keep them as separate elements but point that label using htmlFor to the id of an input.
 
