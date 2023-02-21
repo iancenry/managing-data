@@ -74,12 +74,11 @@
         <input type="radio" id="unemployed"  name="employment" value="unemployed" onChange={handleChange}  />
         ```
 
-        Here react manages state/
-
+        Here react manages state
+        
         ```js
         <input type="radio" id="unemployed"  name="employment" value="unemployed" checked={formData.employment === "unemployed"}  onChange={handleChange}  />
         ```
-
 
 1. When we have a label that is tied to an input you can nest the input inside the children of the label or keep them as separate elements but point that label using htmlFor to the id of an input.
 
