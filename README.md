@@ -70,14 +70,10 @@
     ```
     Note that radio buttons can't be controlled the same way so we have to pass a checked property to it.
     
-        ```js
-        //Here the input has its own html state
-        ```
-    
-        ```jsx
+        ```html
         //Here the input has its own html state
         <input type="radio" id="unemployed"  name="employment" value="unemployed" onChange={handleChange}  />
-
+        
         //Here react manages state
         <input type="radio" id="unemployed"  name="employment" value="unemployed" checked={formData.employment === "unemployed"}  onChange={handleChange}  />
         ```
