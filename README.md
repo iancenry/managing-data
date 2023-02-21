@@ -69,6 +69,11 @@
     />    
     ```
     Note that radio buttons can't be controlled the same way so we have to pass a checked property to it.
+        ```jsx
+            const styles={
+                    backgroundColor: props.on? "#222222": "transparent"
+                }
+        ```
         
         ```html
         //Here the input has its own html state
