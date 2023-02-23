@@ -80,5 +80,7 @@
 
 1. When we have a label that is tied to an input you can nest the input inside the children of the label or keep them as separate elements but point that label using htmlFor to the id of an input.
 
+- Any button in a form will automatically act as a submit button so you would have to manually change the type of button for any other purpose.
+
 
 
